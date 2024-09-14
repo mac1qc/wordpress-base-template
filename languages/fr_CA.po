@@ -2,10 +2,10 @@ msgid ""
 msgstr ""
 "Project-Id-Version: BasicTemplate\n"
 "POT-Creation-Date: 2024-09-13 21:04-0400\n"
-"PO-Revision-Date: 2024-09-14 11:37-0400\n"
+"PO-Revision-Date: 2024-09-14 11:45-0400\n"
 "Last-Translator: Martin <mac@martin-ayotte.net>\n"
 "Language-Team: mac@martin-ayotte.net\n"
-"Language: en\n"
+"Language: fr\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -18,86 +18,86 @@ msgstr ""
 
 #: 404.php:6
 msgid "Error 404 | Not found!"
-msgstr "Error 404 | Not found!"
+msgstr "Erreur 404 | Non trouvé!"
 
 #: 404.php:7
 msgid "No page has been found while using that URL. The page might has been moved."
-msgstr "No page has been found while using that URL. The page might has been moved."
+msgstr "Aucune page n’a été trouvé en utilisant cet URL. La page pourrait avoir été déplacée."
 
 #: 404.php:8
 msgid "Back to home"
-msgstr "Back to home"
+msgstr "Retourner sur l’accueil"
 
 #: attachment.php:9
 #, php-format
 msgid "Return to %s"
-msgstr "Return to %s"
+msgstr "Retourné à %s"
 
 #: attachment.php:9
 #, php-format
 msgid "%s Return to "
-msgstr "%s Return to "
+msgstr "%s Retourné à "
 
 #: comments.php:31
 msgid "Trackback or Pingback"
-msgstr "Trackback or Pingback"
+msgstr "Trackback ou Pingback"
 
 #: entry-footer.php:2
 msgid "Categories: "
-msgstr "Categories: "
+msgstr "Catgories: "
 
 #: entry-footer.php:8
 msgid "Comments"
-msgstr "Comments"
+msgstr "Commentaires"
 
 #: footer.php:6
 msgid "All rights reserved"
-msgstr "All rights reserved"
+msgstr "Tous droits réservés"
 
 #: functions.php:6
 msgid "Main Menu"
-msgstr "Main Menu"
+msgstr "Menu principal"
 
 #: functions.php:7
 msgid "Menu footer"
-msgstr "Menu footer"
+msgstr "Menu du pied de page"
 
 #: functions.php:53
 msgid "Sidebar Widget Area"
-msgstr "Sidebar Widget Area"
+msgstr "Zone de widget de la barre latéral"
 
 #: functions.php:93
 #, php-format
 msgid "No RSS feed available, go back <a href=\"%s\">home</a>!"
-msgstr "No RSS feed available, go back <a href=« %s »>home</a>!"
+msgstr "Aucun fil RSS disponible, retourner sur <a href=\"%s\">l’accueil</a>!"
 
 #: header.php:34
 msgid "Close the menu"
-msgstr "Close the menu"
+msgstr "Fermer le menu"
 
 #: header.php:57
 msgid "Open the menu"
-msgstr "Open the menu"
+msgstr "Ouvrir le menu"
 
 #: nav-below.php:4
 #, php-format
 msgid "%s older"
-msgstr "%s older"
+msgstr "%s plus vieux"
 
 #: nav-below.php:5
 #, php-format
 msgid "newer %s"
-msgstr "newer %s"
+msgstr "nouveau %s"
 
 #: search.php:5
 #, php-format
 msgid "Search Results for: %s"
-msgstr "Search Results for: %s"
+msgstr "Résultats de la recherche pour: %s"
 
 #: search.php:14
 msgid "Nothing Found"
-msgstr "Nothing Found"
+msgstr "Rien de trouvé"
 
 #: search.php:17
 msgid "Sorry, nothing matched your search. Please try again."
-msgstr "Sorry, nothing matched your search. Please try again."
+msgstr "Désolé, aucun résultat pour votre recherche. Veuillez réessayer."
