@@ -1,0 +1,103 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: BasicTemplate\n"
+"POT-Creation-Date: 2024-09-13 21:04-0400\n"
+"PO-Revision-Date: 2024-09-13 21:04-0400\n"
+"Last-Translator: Martin <mac@martin-ayotte.net>\n"
+"Language-Team: mac@martin-ayotte.net\n"
+"Language: en\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 3.5\n"
+"X-Poedit-Basepath: ..\n"
+"X-Poedit-Flags-xgettext: --add-comments=__\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-KeywordsList: esc_html__\n"
+"X-Poedit-SearchPath-0: .\n"
+
+#: 404.php:6
+msgid "Error 404 | Not found!"
+msgstr ""
+
+#: 404.php:7
+msgid "No page has been found while using that URL. The page might has been moved."
+msgstr ""
+
+#: 404.php:8
+msgid "Back to home"
+msgstr ""
+
+#: attachment.php:9
+#, php-format
+msgid "Return to %s"
+msgstr ""
+
+#: attachment.php:9
+#, php-format
+msgid "%s Return to "
+msgstr ""
+
+#: comments.php:31
+msgid "Trackback or Pingback"
+msgstr ""
+
+#: entry-footer.php:2
+msgid "Categories: "
+msgstr ""
+
+#: entry-footer.php:8
+msgid "Comments"
+msgstr ""
+
+#: footer.php:6
+msgid "All rights reserved"
+msgstr ""
+
+#: functions.php:6
+msgid "Main Menu"
+msgstr ""
+
+#: functions.php:7
+msgid "Menu footer"
+msgstr ""
+
+#: functions.php:53
+msgid "Sidebar Widget Area"
+msgstr ""
+
+#: functions.php:93
+#, php-format
+msgid "No RSS feed available, go back <a href=\"%s\">home</a>!"
+msgstr ""
+
+#: header.php:34
+msgid "Close the menu"
+msgstr ""
+
+#: header.php:57
+msgid "Open the menu"
+msgstr ""
+
+#: nav-below.php:4
+#, php-format
+msgid "%s older"
+msgstr ""
+
+#: nav-below.php:5
+#, php-format
+msgid "newer %s"
+msgstr ""
+
+#: search.php:5
+#, php-format
+msgid "Search Results for: %s"
+msgstr ""
+
+#: search.php:14
+msgid "Nothing Found"
+msgstr ""
+
+#: search.php:17
+msgid "Sorry, nothing matched your search. Please try again."
+msgstr ""

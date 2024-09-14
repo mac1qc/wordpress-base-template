@@ -89,11 +89,8 @@ add_action('upload_mimes', 'add_file_types_to_uploads');
 function wpb_disable_feed(): void
 {
   wp_die(
-    esc_html__(
-      sprintf(
-        'Aucun flux RSS disponibles, veuillez retourner à <a href="%s">l\'accueil</a>!',
-        get_bloginfo('url')
-      )
+    sprintf(
+        esc_html__('No RSS feed available, go back <a href="%s">home</a>!'), get_bloginfo('url')
     )
   );
 }
