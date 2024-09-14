@@ -1,0 +1,12 @@
+/*UTILISÉ POUR GÉRER LA TAILLE DES ÉCRANS*/
+@mixin breakpoint($screen){
+  @if map-has-key($breakpoints, $screen) {
+    @if map-get($breakpoints, $screen) > 0{
+      @media(min-width: #{map-get($breakpoints, $screen)}) {
+        @content;
+      }
+    }@else{
+      @content;
+    }
+  }
+}

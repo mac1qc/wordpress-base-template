@@ -1,0 +1,63 @@
+.wp-block-gutenberg-custom-blck-tab{
+  &.tab-left{
+    @include breakpoint(large){
+      display:flex;
+    }
+  }
+  &.tab-top{
+  }
+}
+.tab-button-container{
+  .tab-left &{
+    @include breakpoint(large){
+      width:25%;
+    }
+  }
+}
+.tab-content-container{
+  .tab-left &{
+    @include breakpoint(large){
+      width:75%;
+    }
+  }
+}
+.tab-title{
+  display:inline-block;
+  background:$tab-background;
+  color:$tab-color;
+  font-size:$tab-item-font-size;
+  padding:$tab-item-padding;
+  cursor:pointer;
+  transition:background .3s ease, color .3s ease;
+  &:hover{
+    background:$tab-item-background-hover;
+  }
+  &.tab-active{
+    background:$tab-background-active!important;
+    color:$tab-active-color!important;
+  }
+  .tab-left &{
+    @include breakpoint(large){
+      display:block;
+    }
+  }
+}
+.tab-content{
+  transform:scale(0);
+  transform-origin: left top;
+  overflow:hidden;
+  background:$tab-content-background;
+  border:solid 0 $tab-content-border;
+  color:$tab-content-color;
+  padding:0;
+  height:0;
+  &.tab-active{
+    transform:scale(1);
+    padding:$tab-content-padding;
+    border-width: 1px;
+    height:auto;
+    transition:transform .3s ease, padding .3s ease;
+  }
+  .tab-left &{
+  }
+}

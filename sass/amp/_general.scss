@@ -1,0 +1,129 @@
+*{
+  outline:none;
+  box-sizing: border-box;
+}
+body{
+  overflow-x:hidden;
+  background:$body-background;
+  color:$body-font-color;
+  font-family:$body-font-family;
+  font-size:$global-font-size;
+  line-height:$paragraph-lineheight;
+}
+img{
+  max-width:100%;
+  height:auto;
+}
+a{
+  color:$anchor-color;
+  text-decoration:$anchor-text-decoration;
+  &:hover{
+    color:$anchor-color-hover;
+    text-decoration:$anchor-text-decoration-hover;
+  }
+}
+figure{
+  margin:0;
+  &.is-type-video{
+    position:relative;
+    padding-bottom:56.25%;
+    iframe{
+      position:absolute;
+      top:0;
+      left:0;
+      width:100%;
+      height:100%;
+    }
+  }
+}
+section,
+article{
+  display:block;
+  width:100%;
+}
+.clearfix{
+  &:before,
+  &:after{
+    content:'';
+    display: block;
+    clear:both;
+  }
+}
+.float-right{
+  float:right;
+}
+.float-left{
+  float:left;
+}
+
+//Alignement du texte
+.text-left{
+  text-align: left;
+}
+.text-center{
+  text-align: center;
+}
+.text-right{
+  text-align: right;
+}
+@each $screen in $breakpoint-classes {
+  @include breakpoint($screen){
+    .#{$screen}-text-left{
+      text-align: left;
+    }
+    .#{$screen}-text-center{
+      text-align: center;
+    }
+    .#{$screen}-text-right{
+      text-align: right;
+    }
+  }
+}
+
+//Fallback pour le menu
+.align-center{
+  text-align: center;
+}
+.align-right{
+  text-align: right;
+}
+
+//GESTION DU STICKY
+.sticky{
+  position:sticky;
+  top:0;
+  z-index: 2;
+}
+
+//GESTION DES BOUTONS
+.wp-block-button{
+  > a{
+    padding:$button-padding;
+    margin:$button-margin;
+    transition:$button-transition;
+    border-radius:$button-radius;
+    font-size:map-get($button-sizes, default);
+    &:hover{
+
+    }
+  }
+  &:not(.is-style-outline){
+    > a:not(.has-background){
+      fill:$button-fill;
+      background:$button-background;
+      color:color-pick-contrast($button-background, ($button-color, $button-color-alt));
+      &:hover{
+        background:$button-background-hover;
+        color:color-pick-contrast($button-background-hover, ($button-color, $button-color-alt));
+      }
+    }
+  }
+  &.is-style-outline{
+    > a:not(.has-background){
+      border-color:$button-background;
+      &:hover{
+        border-color:$button-background-hover;
+      }
+    }
+  }
+}

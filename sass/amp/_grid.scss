@@ -1,0 +1,48 @@
+//GESTION DES GRILLES
+.grid-container{
+  position:relative;
+  width:100%;
+  max-width:$global-width;
+  margin:auto;
+  .grid-container{
+    width:calc(100% + #{ map-get($grid-column-gutter, small) * 2});
+    margin-left:#{0 - map-get($grid-column-gutter, small)};
+    @include breakpoint(medium){
+      width:calc(100% + #{ map-get($grid-column-gutter, medium) * 2});
+      margin-left:#{0 - map-get($grid-column-gutter, medium)};
+    }
+  }
+}
+.grid-x{
+  display: flex;
+  flex-flow: row wrap;
+  > .cell{
+    flex:0 0 auto;
+    width:100%;
+    padding:0 #{map-get($grid-column-gutter, small)}  #{map-get($grid-column-gutter, small)};
+    @include breakpoint(medium){
+      padding:0 #{map-get($grid-column-gutter, medium)} #{map-get($grid-column-gutter, medium)};
+    }
+  }
+  &.align-middle{
+    align-items: center;
+  }
+  @each $screen in $breakpoint-classes {
+    @include breakpoint($screen){
+      @for $i from 1 through $grid-column-count {
+        .#{$screen}-#{$i}{
+          width: percentage($i / $grid-column-count);
+        }
+        .offset-#{$screen}-#{$i}{
+
+          $paddingInternal: #{map-get($grid-column-gutter, medium)};
+          @if($screen == small){
+            $paddingInternal: #{map-get($grid-column-gutter, small)}
+          }
+
+          padding-left: calc(#{percentage($i / $grid-column-count)} + #{$paddingInternal});
+        }
+      }
+    }
+  }
+}

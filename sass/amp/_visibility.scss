@@ -1,0 +1,23 @@
+@each $screen in $breakpoint-classes {
+  .show-for-#{$screen}{
+    display:none;
+  }
+  @include breakpoint($screen){
+    .show-for-#{$screen}{
+      display:block;
+    }
+  }
+}
+@each $screen in $breakpoint-classes {
+  .hide-for-#{$screen}{
+    display:block;
+  }
+  @include breakpoint($screen){
+    .hide-for-#{$screen}{
+      display:none;
+    }
+  }
+}
+.hide{
+  display:none;
+}

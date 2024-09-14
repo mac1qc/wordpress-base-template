@@ -1,0 +1,27 @@
+.button{
+  display: inline-block;
+  cursor: $global-button-cursor;
+  padding:$button-padding;
+  margin:$button-margin;
+  background:$button-background;
+  color:$button-color;
+  border-radius:$button-radius;
+  transition:$button-transition;
+  font-size:map-get($button-sizes, default);
+  &:hover{
+    background:$button-background-hover;
+    color:$button-color;
+  }
+  &:disabled{
+    opacity:$button-opacity-disabled;
+  }
+  &.tiny{
+    font-size:map-get($button-sizes, tiny);
+  }
+  &.small{
+    font-size:map-get($button-sizes, small);
+  }
+  &.large{
+    font-size:map-get($button-sizes, large);
+  }
+}

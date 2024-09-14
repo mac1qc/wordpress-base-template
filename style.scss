@@ -1,0 +1,35 @@
+/*!
+Theme Name: Base template
+Author: Martin
+Description: Basic template with speed in mind
+Version: 1.0
+License: MIT
+*/
+@import "sass/normalize";
+@import "sass/settings";
+@import "sass/block-library";
+@import "sass/amp/general";
+@import "sass/amp/typo";
+@import "sass/amp/visibility";
+@import "sass/amp/grid";
+@import "sass/amp/menu";
+@import "sass/amp/offcanvas";
+@import "sass/amp/drilldown";
+@import "sass/amp/modal";
+@import "sass/amp/form";
+@import "sass/amp/button";
+
+/*ELEMENTS CALLED BY TAG*/
+
+/*ELEMENTS CALLED BY CLASS*/
+.wp-block-getwid-section {
+    width: 100%;
+    .wp-block-getwid-section__inner-wrapper {
+        max-width: $global-width;
+    }
+    .wp-block-getwid-section__wrapper {
+        padding:0;
+    }
+}
+
+/*ELEMENTS CALLED BY ID*/

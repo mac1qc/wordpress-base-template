@@ -1,0 +1,37 @@
+.tab-container{
+
+}
+  .tabs{
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+    flex-wrap:wrap;
+    .tab-container.vertical{
+      flex-direction:column;
+    }
+  }
+    .tabs-title{
+      &.is-active{
+
+      }
+      + .tabs-title{
+        margin-left:map-get($grid-column-gutter, small);
+        @include breakpoint(medium){
+          margin-left:map-get($grid-column-gutter, medium);
+        }
+      }
+    }
+  .tab-content{
+
+  }
+    .tabs-panel{
+      visibility: hidden;
+      height:0;
+      overflow: hidden;
+      &.is-active{
+        visibility: visible;
+        height:auto;
+        overflow:inherit;
+      }
+    }

@@ -1,0 +1,41 @@
+.comments{
+  ul{
+    list-style: none;
+    padding-left:10px;
+    border-left:solid 3px $blue-1;
+    ul{
+      margin-left:20px;
+    }
+  }
+  > ul{
+  }
+  li + li{
+    margin-top:20px;
+  }
+  .comment-author{
+    img{
+      vertical-align: middle;
+    }
+    .fn{
+      font-weight: bold;
+    }
+  }
+  .commentmetadata{
+    font-size:.7em;
+  }
+  .comment-reply-link{
+    display: inline-block;
+    color:$white;
+    background:$blue-1;
+    border-radius:5px;
+    padding:0 10px;
+    line-height: 30px;
+    height:30px;
+    margin-bottom:10px;
+    transition:background .3s ease, color .3s ease;
+    box-sizing: content-box;
+    &:hover{
+      background:$orange-1;
+    }
+  }
+}

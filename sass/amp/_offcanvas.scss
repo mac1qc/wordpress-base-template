@@ -1,0 +1,33 @@
+.off-canvas{
+  background:$offcanvas-background;
+  position:fixed;
+  top:0;
+  height:100vh;
+  width:100%;
+  max-width:#{map-get($offcanvas-sizes, small)};
+  z-index:$offcanvas-overlap-zindex;
+  transition: transform $top-animation-time ease;
+  overflow: auto;
+  &.position-left{
+    left:0;
+    transform:translateX(-100%);
+  }
+  &.position-right{
+    right:0;
+    transform:translateX(100%);
+  }
+}
+.off-canvas-content{
+  position:relative;
+}
+.off-canvas-open{
+  &.off-canvas{
+    transform:translateX(0);
+  }
+  .off-canvas-content{
+    &:before{
+      z-index:1;
+      opacity:1;
+    }
+  }
+}

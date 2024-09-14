@@ -1,0 +1,33 @@
+.wp-block-gutenberg-custom-blck-accordion{
+  margin:20px 0;
+}
+.accordion-title{
+  background:$accordion-background;
+  font-size:$accordion-title-font-size;
+  color:$accordion-item-color;
+  padding:$accordion-item-padding;
+  transition:background .3s ease;
+  cursor: pointer;
+  &:hover{
+    background:$accordion-item-background-hover;
+  }
+  &.open {
+    background:$accordion-item-background-hover;
+    + .accordion-content{
+      transform:scaleY(1);
+      height:auto;
+      padding:$accordion-content-padding;
+      border:$accordion-content-border;
+    }
+  }
+}
+.accordion-content{
+  background:$accordion-content-background;
+  color:$accordion-content-color;
+  padding:0;
+  transform:scaleY(0);
+  height:0;
+  transform-origin: center top;
+  overflow: hidden;
+  transition:transform .3s ease, height .3s ease, padding .3s ease;
+}

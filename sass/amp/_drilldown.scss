@@ -1,0 +1,39 @@
+.drilldown-container{
+  position:relative;
+  width:100%;
+  width:100%;
+  overflow-x:hidden;
+  ul{
+    background:$drilldown-background;
+  }
+}
+.drilldown{
+  transform:translateX(0);
+  transition:$drilldown-transition;
+  margin:$drilldown-padding;
+  padding:0;
+  ul{
+    padding:$drilldown-padding;
+    position: fixed;
+    left: 100%;
+    top: 0;
+    width: 100%;
+    ul{
+      transform: translateX(100%);
+    }
+  }
+  &.menu li.menu-item-has-children > a:after{
+    border-top: 6px solid transparent;
+    border-bottom: 6px solid transparent;
+    border-left: 6px solid #0ff;
+    border-right:none;
+    position: absolute;
+    right: 5px;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+}
+.back-drilldown{
+  font-weight: bold;
+  text-transform: uppercase;
+}

@@ -1,0 +1,73 @@
+label{
+  color:$form-label-color;
+  font-weight:$form-label-font-weight;
+  font-size:$form-label-font-size;
+  line-height:$form-label-line-height;
+}
+[type="text"],
+[type="password"],
+[type="date"],
+[type="email"],
+[type="search"],
+[type="tel"],
+textarea{
+  appearance: none;
+  display:block;
+  width:100%;
+  line-height: $input-line-height;
+  padding:$input-padding;
+  border:$input-border;
+  background:$input-background;
+  font-size:$input-font-size;
+  color:$black;
+  box-shadow:$input-shadow;
+  transition:$input-transition;
+  resize: none;
+  &:focus{
+    border:$input-border-focus;
+    background:$input-background-focus;
+    box-shadow:$input-shadow-focus;
+  }
+  &:disabled,
+  &[readonly]{
+    background:$input-background-disabled;
+    cursor:$input-cursor-disabled;
+  }
+}
+::placeholder{
+  color:$input-placeholder-color;
+}
+input[type="submit"]{
+  appearance: none;
+  padding:$button-padding;
+  margin:$button-margin;
+  fill:$button-fill;
+  background:$button-background;
+  transition:$button-transition;
+  border-radius:$button-radius;
+  font-size:map-get($button-sizes, default);
+  border:none;
+  cursor: pointer;
+  color:color-pick-contrast($button-background, ($button-color, $button-color-alt));
+  &:hover{
+    background:$button-background-hover;
+    color:color-pick-contrast($button-background-hover, ($button-color, $button-color-alt));
+  }
+  &:disabled{
+    opacity:$button-opacity-disabled;
+  }
+}
+
+//PATCH DÉDIÉ À Contact Form 7
+form.sent{
+  label,
+  input,
+  textarea,
+  p{
+    display:none;
+  }
+  .wpcf7-response-output{
+    display:block!important;
+    margin:11px 0;
+  }
+}
